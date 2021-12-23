@@ -8,7 +8,7 @@ PUZZLE_INPUTS_DIRECTORY = REPO_ROOT / 'puzzle_inputs'
 
 
 def as_text(day: int) -> str:
-    puzzle_input = PUZZLE_INPUTS_DIRECTORY / f'Day {day}.txt'
+    puzzle_input = PUZZLE_INPUTS_DIRECTORY / f'Day {day:0>2}.txt'
     try:
         return puzzle_input.read_text()
     except FileNotFoundError as error:
